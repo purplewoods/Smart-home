@@ -1,0 +1,10 @@
+<view class='title'>数据展示</view>
+<view class='tem'>温度：</view>
+<canvas class = "canvas" id="chart1"
+canvas-id="humidity"></canvas>
+<view class='lig'>光照：</view>
+<canvas class = "canvas" id="chart2"
+canvas-id="light"></canvas>
+<view class='hum'>湿度：</view>
+<canvas class = "canvas" id="chart3"
+canvas-id="tempe"></canvas>

@@ -1,0 +1,18 @@
+<view class="wenzi1">小江强烈推荐的番qwq</view>
+<!-- 轮播图 -->
+<swiper class='swiperClass' autoplay indicator-color="#a39f99" indicator-active-color="#f49641" indicator-dots  interval="2000" duration="1000" previous-margin="30px" next-margin="30px" circular bindchange="bindchange" style='height: {{swiperHeight}}px'>
+ <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+ <swiper-item>
+ <image src="{{item}}" class="slide-image {{swiperIndex == index ? 'active' : 'quiet'}}" mode='aspectFill'>
+ </image>
+ </swiper-item>
+ </block>
+ </swiper>
+
+ <view class="wenzi2">小江能帮的忙：</view>
+ <button class="deng" bindtap='lightswtichon'>云开</button>
+ <button class="fennshan" bindtap='lightswtichdown'>灯停</button>
+ <button class="deng" bindtap='doorswtichon'>开门</button>
+<button class="deng" bindtap='doorswtichdown'>关门</button>
+ <button class="fans" bindtap='fansswtichon'>水逆退散</button>
+<button class="fans" bindtap='fansswtichdown'>风停</button>

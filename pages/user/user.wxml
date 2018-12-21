@@ -1,0 +1,43 @@
+<view class="container">
+ <view class="topview">
+  <image class="topimage"  src="/images/ailuomana.png"></image>
+  <image class="topimage2"  src="/images/ailuomana2.png"></image>
+  </view>
+ <view class="stars"> 
+    <block wx:for="{{stararray}}" wx:key="stararray" wx:for-item="item" wx:for-index="index"> 
+      <view class="star" style="transform-origin: 0px 0px {{item.curR}}px; transform: translate3d(0px, 0px, {{item.curR}}px) rotateY({{item.rotateY}}deg) rotateX({{item.rotateX}}deg) scale({{item.s}}, {{item.s}});"></view> 
+    </block> 
+  </view> 
+  <view class="companyBox"> 
+    <view class="animate one"> 
+      <text>乐</text> 
+      <text>于</text> 
+      <text>助</text> 
+      <text>人</text> 
+      <text>的</text> 
+      <text>小</text> 
+      <text>江</text> 
+      <text>同</text> 
+      <text>学</text> 
+      
+    </view> 
+  </view> 
+  
+  <view class="stars2"> 
+    <block wx:for="{{stararray}}" wx:key="stararray" wx:for-item="item" wx:for-index="index"> 
+      <view class="star" style="transform-origin: 0px 0px {{item.curR}}px; transform: translate3d(0px, 0px, {{item.curR}}px) rotateY({{item.rotateY}}deg) rotateX({{item.rotateX}}deg) scale({{item.s}}, {{item.s}});"></view> 
+    </block> 
+  </view>
+<view class="userinfo">
+
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <text>欢迎</text>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+<button class="btn2" type="primary" plain='false' bindtap='getDataFromOneNet'>查看我的地盘</button>
+<button class="btn1" type="primary"  plain="false" bindtap="toenter"> 切换小主 </button>
+</view>

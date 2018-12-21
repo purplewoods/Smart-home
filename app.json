@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/enter/enter",
+    "pages/user/user",
+    "pages/shouye/shouye",
+    "pages/about/about",
+    "pages/logs/logs",
+    "pages/start/start",
+    "pages/data/data",
+    "pages/xjsaying/xjsaying"
+  ],
+ 
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "乐于助人的小江同学",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+
+
+  },
+  "tabBar": {
+    "selectedColor":"#000000",
+    "list": [
+      {
+        "pagePath":"pages/user/user",
+        "text": "用户",
+        "iconPath": "images/geren2.png",
+        "selectedIconPath":"images/geren.png"
+
+      },
+      {
+        "pagePath": "pages/shouye/shouye",
+        "text": "首页",
+        "iconPath": "images/gongnengdingyi2.png",
+        "selectedIconPath": "images/gongnengdingyi.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "images/bianji2.png",
+        "selectedIconPath": "images/bianji.png"
+      }
+    ]
+    
+  },
+  "debug": true
+}

@@ -1,0 +1,36 @@
+<view class="container">
+  <swiper indicator-dots='true' autoplay="true" interval="5000">
+    <swiper-item>
+      <view class="item-container">
+        <image src="{{saberUrl}}"></image>
+        <text class="name">朱皓男</text>
+        <text class="brief">吾王剑锋所指，我等心之所向</text>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="item-container">
+        <image src="{{paojieUrl}}"></image>
+        <text class="name">江勇涛</text>
+        <text class="brief">你指间跃动的电光是我今生不变的梦想</text>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="item-container">
+        <image src="{{yasuoUrl}}"></image>
+        <text class="name">马忠民</text>
+        <text class="brief">只要我E的够快，队友的问号就跟不上我</text>
+      </view>
+    </swiper-item>
+        <swiper-item>
+      <view class="item-container">
+        <image src="{{cluoUrl}}"></image>
+        <text class="name">郭俊杰</text>
+        <text class="brief">我是快乐C罗</text>
+      </view>
+    </swiper-item>
+  </swiper>
+  <text class="introduction">这个应用还有很多可以改进的地方，但是受限于技术不足，各位大佬将就看看</text>
+  <button class="btn1" type="primary"  plain="false" bindtap="toxjsaying"> 点我有彩蛋哦 </button>
+  </view>
+
+
